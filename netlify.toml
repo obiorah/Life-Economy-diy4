@@ -1,0 +1,10 @@
+[build]
+  # Command to build the site AND list the output directory contents
+  command = "npm run build && ls -R dist"
+
+  # Directory containing the deploy-ready assets, relative to the base directory
+  publish = "dist/client" # Keep this as is
+
+[functions]
+  # Directory containing serverless functions (the server build output)
+  directory = "dist/server" # Keep this as is
